@@ -1,7 +1,7 @@
 stages {
   stage('test') {
     steps {
-      withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'null', mavenSettingsConfig: 'null') {
+      withMaven( maven: 'maven 3') {
     sh'maven clean install'
 }
     }
